@@ -17,6 +17,7 @@ struct FileSwitcherDumpApp: App {
 }
 
 // https://stackoverflow.com/a/51241158
+
 extension Bundle {
     public var icon: UIImage? {
         if let icons = infoDictionary?["CFBundleIcons"] as? [String: Any],
