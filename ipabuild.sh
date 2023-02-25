@@ -5,7 +5,7 @@ set -e
 cd "$(dirname "$0")"
 
 WORKING_LOCATION="$(pwd)"
-APPLICATION_NAME=Cowabunga
+APPLICATION_NAME=FileSwitcherDump
 
 if [ ! -d "build" ]; then
     mkdir build
@@ -33,14 +33,9 @@ if [ -e "$TARGET_APP/embedded.mobileprovision" ]; then
     rm -rf "$TARGET_APP/embedded.mobileprovision"
 fi
 
-# Add entitlements
-echo "Adding entitlements"
-chmod a+x $WORKING_LOCATION/bin/ldid
-$WORKING_LOCATION/bin/ldid -S"$WORKING_LOCATION/entitlements.plist" "$TARGET_APP/$APPLICATION_NAME"
-
 mkdir Payload
-cp -r Cowabunga.app Payload/Cowabunga.app
-zip -vr Cowabunga.ipa Payload
-rm -rf Cowabunga.app
+cp -r FileSwitcherDump.app Payload/FileSwitcherDump.app
+zip -vr FileSwitcherDump.ipa Payload
+rm -rf FileSwitcherDump.app
 rm -rf Payload
 
