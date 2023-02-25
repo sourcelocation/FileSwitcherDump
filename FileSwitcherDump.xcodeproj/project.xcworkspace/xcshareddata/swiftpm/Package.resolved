@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "filepicker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/markrenaud/FilePicker",
+      "state" : {
+        "revision" : "720f8cb5ca0c0efc982ed381afc84ba3e8b3214e",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "zip",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/marmelroy/Zip",
+      "state" : {
+        "branch" : "master",
+        "revision" : "67fa55813b9e7b3b9acee9c0ae501def28746d76"
+      }
+    }
+  ],
+  "version" : 2
+}

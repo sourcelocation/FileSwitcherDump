@@ -11,6 +11,9 @@
 		21CD7A5B29AA9F6200B93ADC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD7A5A29AA9F6200B93ADC /* ContentView.swift */; };
 		21CD7A5D29AA9F6300B93ADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CD7A5C29AA9F6300B93ADC /* Assets.xcassets */; };
 		21CD7A6029AA9F6300B93ADC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CD7A5F29AA9F6300B93ADC /* Preview Assets.xcassets */; };
+		21CD7A6829AAA07C00B93ADC /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = 21CD7A6729AAA07C00B93ADC /* Zip */; };
+		21CD7A6B29AAA0A400B93ADC /* FilePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 21CD7A6A29AAA0A400B93ADC /* FilePicker */; };
+		21CD7A6D29AAA0E400B93ADC /* Alert++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD7A6C29AAA0E400B93ADC /* Alert++.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,7 @@
 		21CD7A5A29AA9F6200B93ADC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		21CD7A5C29AA9F6300B93ADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21CD7A5F29AA9F6300B93ADC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		21CD7A6C29AAA0E400B93ADC /* Alert++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alert++.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21CD7A6B29AAA0A400B93ADC /* FilePicker in Frameworks */,
+				21CD7A6829AAA07C00B93ADC /* Zip in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +59,7 @@
 			children = (
 				21CD7A5829AA9F6200B93ADC /* FileSwitcherDumpApp.swift */,
 				21CD7A5A29AA9F6200B93ADC /* ContentView.swift */,
+				21CD7A6C29AAA0E400B93ADC /* Alert++.swift */,
 				21CD7A5C29AA9F6300B93ADC /* Assets.xcassets */,
 				21CD7A5E29AA9F6300B93ADC /* Preview Content */,
 			);
@@ -83,6 +90,10 @@
 			dependencies = (
 			);
 			name = FileSwitcherDump;
+			packageProductDependencies = (
+				21CD7A6729AAA07C00B93ADC /* Zip */,
+				21CD7A6A29AAA0A400B93ADC /* FilePicker */,
+			);
 			productName = FileSwitcherDump;
 			productReference = 21CD7A5529AA9F6200B93ADC /* FileSwitcherDump.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,10 @@
 				Base,
 			);
 			mainGroup = 21CD7A4C29AA9F6200B93ADC;
+			packageReferences = (
+				21CD7A6629AAA07C00B93ADC /* XCRemoteSwiftPackageReference "Zip" */,
+				21CD7A6929AAA0A400B93ADC /* XCRemoteSwiftPackageReference "FilePicker" */,
+			);
 			productRefGroup = 21CD7A5629AA9F6200B93ADC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21CD7A5B29AA9F6200B93ADC /* ContentView.swift in Sources */,
+				21CD7A6D29AAA0E400B93ADC /* Alert++.swift in Sources */,
 				21CD7A5929AA9F6200B93ADC /* FileSwitcherDumpApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +291,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +321,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +357,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		21CD7A6629AAA07C00B93ADC /* XCRemoteSwiftPackageReference "Zip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/Zip";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		21CD7A6929AAA0A400B93ADC /* XCRemoteSwiftPackageReference "FilePicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/markrenaud/FilePicker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		21CD7A6729AAA07C00B93ADC /* Zip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21CD7A6629AAA07C00B93ADC /* XCRemoteSwiftPackageReference "Zip" */;
+			productName = Zip;
+		};
+		21CD7A6A29AAA0A400B93ADC /* FilePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21CD7A6929AAA0A400B93ADC /* XCRemoteSwiftPackageReference "FilePicker" */;
+			productName = FilePicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 21CD7A4D29AA9F6200B93ADC /* Project object */;
 }
